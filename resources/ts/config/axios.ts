@@ -41,12 +41,11 @@ api.interceptors.response.use(
             // useGlobalStores.setShowLoading(false);
         }
 
-        if (status == 401) {
-            // const useGlobalStores = globalStores();
-            // useGlobalStores.setShowLoading(false);
-            //remove token
+        if (status == 401 && !localStorage.getItem("tokenRemoved")) {
             localStorage.removeItem("token");
-            router.push({ name: "login", replace: true });
+            localStorage.setItem("tokenRemoved", "true");
+
+            window.location.href = "/login";
         }
 
         return Promise.reject(error);

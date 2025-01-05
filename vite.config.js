@@ -11,10 +11,13 @@ export default defineConfig({
         }),
         vue(),
     ],
-    base: process.env.NODE_ENV === "production" ? "/build/" : "/",
     resolve: {
         alias: {
             "@": path.resolve(__dirname, "resources/ts"),
         },
+    },
+    build: {
+        manifest: true,
+        outDir: "public/build",
     },
 });
