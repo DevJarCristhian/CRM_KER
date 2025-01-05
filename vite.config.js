@@ -16,8 +16,4 @@ export default defineConfig({
             "@": path.resolve(__dirname, "resources/ts"),
         },
     },
-    build: {
-        manifest: true,
-        outDir: "public/build",
-    },
 });
