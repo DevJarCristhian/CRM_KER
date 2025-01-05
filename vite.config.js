@@ -10,19 +10,10 @@ export default defineConfig({
             refresh: true,
         }),
         vue(),
-        // vue({
-        //     template: {
-        //         transformAssetUrls: {
-        //             base: null,
-        //             includeAbsolute: false,
-        //         },
-        //     },
-        // }),
     ],
-    resolve: { alias: { "@": path.resolve(__dirname, "./resources/ts") } },
-    // resolve: {
-    //     alias: {
-    //         vue: 'vue/dist/vue.esm-bundler.js',
-    //     },
-    // },
+    resolve: {
+        alias: {
+            "@": path.resolve(__dirname, "resources/ts"),
+        },
+    },
 });

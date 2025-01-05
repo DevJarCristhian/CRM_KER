@@ -11,9 +11,12 @@
     "sourceMap": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": ["resources/ts/*"]
+      "@/*": ["resources/ts/*"]  
     },
     "lib": ["esnext", "dom"]
   },
-  "include": ["resources/ts/**/*", "resources/views/ss.js"]
+  "include": [
+    "resources/ts/**/*", 
+    "resources/views/**/*" 
+  ]
 }
