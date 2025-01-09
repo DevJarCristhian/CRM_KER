@@ -1,13 +1,10 @@
 <?php
 
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\AuthController;
 use App\Http\Controllers\Api\Access\RolesController;
 use App\Http\Controllers\Api\Access\UsersController;
 use App\Http\Controllers\Api\People\DependentController;
-
-// use App\Http\Controllers\Api\Users\RolesController;
 
 Route::prefix('auth')->group(function () {
     Route::post('login', [AuthController::class, 'login']);
@@ -37,11 +34,5 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
         // Route::get('permissions', [DependentController::class, 'getPermissions']);
     });
     //     // Route::prefix('logistic')->group(function () {
-    //     //     Route::prefix('stock')->group(function () {
-    //     //         Route::prefix('ess')->group(function () {
-    //     //             Route::get('/', [StockEssController::class, 'get']);
-    //     //             Route::post('export-to-excel', [StockEssController::class, 'exportToExcel']);
-    //     //         });
-    //     //     });
     //     // });
 });
