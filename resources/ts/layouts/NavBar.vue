@@ -74,7 +74,7 @@ const offset = [-5, -1]
                 <j-icon name="menu" />
             </button>
             <span class="">
-                <img width="120px" src="../../images/logo.webp" alt="">
+                <img width="120px" src="/public/images/logo.webp" alt="">
             </span>
         </div>
 

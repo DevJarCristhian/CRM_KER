@@ -66,7 +66,7 @@ const rules = {
       class="flex justify-center items-center sm:w-2/4 w-full bg-white dark:bg-gray-900 border-r border-gray-200 dark:border-gray-600">
       <div class="grid gap-3 w-full px-4 md:px-[20%]">
         <div class="flex justify-center">
-          <img width="50px" src="../../images/short.webp" alt="">
+          <img width="50px" src="/public/images/short.webp" alt="">
         </div>
         <span class="text-xl text-center font-semibold">Iniciar Sesion</span>
         <span class="text-md opacity-70 text-center -mt-3 mb-4">Bienvenido al Sistema</span>
@@ -103,7 +103,7 @@ const rules = {
     </div>
     <div class="w-full hidden sm:block bg-white dark:bg-gray-900">
       <div class="flex justify-center items-center h-full">
-        <img width="300px" src="../../images/logo.webp" alt="">
+        <img width="300px" src="/public/images/logo.webp" alt="">
       </div>
     </div>
   </div>
