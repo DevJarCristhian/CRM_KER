@@ -16,7 +16,7 @@ export default defineConfig({
             "@": path.resolve(__dirname, "resources/ts"),
         },
     },
-    // server: {
-    // https: true,
-    // },
+    server: {
+        https: true,
+    },
 });
