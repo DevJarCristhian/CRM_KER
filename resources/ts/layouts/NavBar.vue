@@ -6,6 +6,7 @@ import { h, ref, toRefs } from 'vue';
 import { useRouter } from 'vue-router';
 import authServices from '@/services/auth.services';
 import { authStores } from '@/store/auth';
+// import logo from '@/images/logo.webp';
 
 const { toggleDarkMode, theme } = useDarkMode();
 const { user } = toRefs(authStores())
@@ -73,7 +74,7 @@ const offset = [-5, -1]
                 <j-icon name="menu" />
             </button>
             <span class="">
-                <img width="120px" src="../assets/logo.webp" alt="">
+                <img width="120px" src="../../images/logo.webp" alt="">
             </span>
         </div>
 
@@ -101,7 +102,7 @@ const offset = [-5, -1]
                             </div>
                         </div>
                         <div class="opacity-50">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                            <svg xmlns="https://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
                                 <path fill="currentColor"
                                     d="M12 3.586L17.414 9L16 10.414l-4-4l-4 4L6.586 9zm-4 10l4 4l4-4L17.414 15L12 20.414L6.586 15z" />
                             </svg>

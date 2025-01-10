@@ -9,14 +9,21 @@
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "sourceMap": true,
-    "baseUrl": ".",
+    "baseUrl": "./",
     "paths": {
-      "@/*": ["resources/ts/*"]  
+      "@/*": ["resources/ts/*"],
+      "@images/*": [
+        "./resources/images/*"
+      ],
     },
     "lib": ["esnext", "dom"]
   },
   "include": [
     "resources/ts/**/*", 
     "resources/views/**/*" 
+  ],
+  "exclude": [
+    "./dist",
+    "./node_modules"
   ]
 }

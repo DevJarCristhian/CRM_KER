@@ -16,10 +16,7 @@ export default defineConfig({
             "@": path.resolve(__dirname, "resources/ts"),
         },
     },
-    server: {
-        https: true,
-        proxy: {
-            "/api": "https://crmker-production.up.railway.app", // Si estás usando API externas
-        },
-    },
+    // server: {
+    // https: true,
+    // },
 });
